@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+html{
+  font-family: 'Poppins', sans-serif;
+  background: url(/Img/pets-background.webp) repeat center center fixed;
+  background-repeat: repeat;
+  background-size: 20%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Header */
+.header__container {
+  display: flex;
+  background-color: darkseagreen;
+  height: 5rem;
+  padding: 0.5rem;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.header__logo {
+  width: 5rem;
+  border-radius: 50%;
+  float: left;
+}
+
+.header__title{
+  position: relative;
+}
+
+/* Nav */
+nav {
+  margin-left: auto;
+}
+
+.nav__links {
+  border: 2px solid;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: sticky;
+}
+
+.nav__links li {
+  display: inline;
+  float: left;
+  background-color: #F9B04B;
+}
+
+.nav__links li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+
+}
+
+.nav__links li a:hover {
+  background-color: cadetblue;
+  color: white;
+}
+
+/* Main */
+.main__container {
+  padding: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.pets__list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  max-width: 60%;
+  font-size: 3rem;
+  color: darkolivegreen;
+  padding: 1rem;
+  background-color: bisque;
+}
+
+.pets__list p {
+  color: black;
+  font-size: 2rem;
+}
+
+.pets__list ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 0.2rem;
+}
+
+.pets__list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.pets__list img {
+  position: relative;
+  height: 9rem;
+  width: 9rem;
+  overflow: hidden;
+  border: 3px solid #F9B04B;
+  border-radius: 25%;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  color: white;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.social__links {
+  font-size: 2rem;
+  opacity: 1;
+}
+
+.bxl-instagram {
+  color: #bc2a8d;
+}
+
+.bxl-twitter {
+  color: #1DA1F2;
+}
+
+.bxl-tiktok {
+  color: white
+}
