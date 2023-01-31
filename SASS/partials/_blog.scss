@@ -1,0 +1,37 @@
+.blog {
+  &__post {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    max-width: 80%;
+    overflow: auto;
+    background-color: #bc2a8d;
+    border-radius: 15px;
+    place-items: center;
+
+    & img {
+      position: relative;
+      height: 5rem;
+      width: 5rem;
+      border: 3px solid #F9B04B;
+      border-radius: 50%;
+    }
+
+    & p {
+      border-radius: 15px;
+      background-color: aquamarine;
+    }
+
+    & span {
+      font-size: large;
+    }
+
+    & form{
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    &  textarea {
+      height: 10em;
+    }
+  }
+}

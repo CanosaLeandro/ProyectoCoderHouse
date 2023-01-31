@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Poppins:ital,wght@0,300;1,200&display=swap");
+html {
+  background: url(/Img/pets-background.webp) repeat center center fixed;
+  background-repeat: repeat;
+  background-size: 30%; }
+
+body {
+  font-family: 'Itim', cursive;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
+
+ul {
+  list-style-type: none; }
+
+.header__container {
+  display: flex;
+  background-color: darkseagreen;
+  padding: 0.5rem;
+  justify-content: baseline;
+  align-items: center; }
+
+.header__logo {
+  width: 5rem;
+  border-radius: 50%;
+  float: left;
+  margin: 0.5rem; }
+
+.header__title {
+  position: relative; }
+
+nav {
+  margin-left: auto; }
+
+.nav__links {
+  border: 2px solid;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: sticky; }
+  .nav__links li {
+    display: inline;
+    float: left;
+    background-color: #F9B04B; }
+    .nav__links li a {
+      display: block;
+      color: black;
+      padding: 8px 16px;
+      text-decoration: none; }
+      .nav__links li a:hover {
+        background-color: cadetblue;
+        color: white; }
+
+main {
+  height: 75%; }
+
+.main__container {
+  padding: 1rem;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  height: 100%; }
+
+iframe {
+  min-width: 35%; }
+
+.pets__list {
+  display: grid;
+  align-items: center;
+  color: darkolivegreen;
+  padding: 1rem;
+  background-color: wheat;
+  overflow: auto;
+  max-height: 100%; }
+  .pets__list p {
+    color: black; }
+  .pets__list ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 0.2rem; }
+  .pets__list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; }
+  .pets__list img {
+    position: relative;
+    height: 9rem;
+    width: 9rem;
+    overflow: hidden;
+    border: 3px solid #F9B04B;
+    border-radius: 25%; }
+
+.blog__post {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  max-width: 80%;
+  overflow: auto;
+  background-color: #bc2a8d;
+  border-radius: 15px;
+  place-items: center; }
+  .blog__post img {
+    position: relative;
+    height: 5rem;
+    width: 5rem;
+    border: 3px solid #F9B04B;
+    border-radius: 50%; }
+  .blog__post p {
+    border-radius: 15px;
+    background-color: aquamarine; }
+  .blog__post span {
+    font-size: large; }
+  .blog__post form {
+    flex-direction: column;
+    align-items: flex-end; }
+  .blog__post textarea {
+    height: 10em; }
+
+.products__container {
+  background-color: midnightblue;
+  color: white;
+  height: 90%; }
+
+.products__img {
+  height: 15rem;
+  width: 15rem;
+  border: 3px solid #F9B04B;
+  border-radius: 15px; }
+
+@media screen and (max-width: 1024px) {
+  .pets__list {
+    font-size: 2rem; }
+  .main__container {
+    flex-direction: column;
+    align-items: center; }
+  .blog__container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: end; }
+  .blog__input textarea {
+    width: 20em; } }
+
+@media screen and (min-width: 1024px) {
+  .pets__list {
+    font-size: 2.3rem; }
+  .blog__input textarea {
+    width: 50em; } }
+
+footer {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  color: white;
+  background-color: black;
+  opacity: 0.8;
+  margin-top: auto; }
+
+.social__links {
+  font-size: 2rem;
+  opacity: 1; }
+
+.bxl-instagram {
+  color: #bc2a8d; }
+
+.bxl-twitter {
+  color: #1DA1F2; }
+
+.bxl-tiktok {
+  color: white; }

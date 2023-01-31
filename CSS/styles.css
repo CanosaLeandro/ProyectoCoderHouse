@@ -71,7 +71,7 @@ nav {
 
 /* Main */
 main {
-  height: 70%;
+  height: 75%;
 }
 
 .main__container {
@@ -159,6 +159,19 @@ iframe {
   height: 10em;
 }
 
+.products__container {
+  background-color: midnightblue;
+  color: white;
+  height: 90%;
+}
+
+.product__img {
+  height: 15rem;
+  width: 15rem;
+  border: 3px solid #F9B04B;
+  border-radius: 15px;
+}
+
 /* Footer */
 footer {
   width: 100%;
@@ -204,6 +217,7 @@ footer {
   .blog__container {
     flex-direction: column;
     align-items: center;
+    justify-content: end;
   }
 
   .blog__input textarea {

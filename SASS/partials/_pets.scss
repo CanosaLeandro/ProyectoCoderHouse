@@ -1,0 +1,39 @@
+.pets {
+  &__list {
+    display: grid;
+    align-items: center;
+    color: darkolivegreen;
+    padding: 1rem;
+    background-color: wheat;
+    overflow: auto;
+    max-height: 100%;
+
+    & p {
+      color: black;
+    }
+
+    & ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2rem;
+      padding: 0.2rem;
+    }
+
+    & li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    & img {
+      position: relative;
+      height: 9rem;
+      width: 9rem;
+      overflow: hidden;
+      border: 3px solid #F9B04B;
+      border-radius: 25%;
+    }
+  }
+}

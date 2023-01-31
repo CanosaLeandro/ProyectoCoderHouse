@@ -1,0 +1,16 @@
+main {
+  height: 75%;
+}
+
+.main {
+  &__container {
+    padding: 1rem;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    height: 100%;
+  }
+}
+
+iframe {
+  min-width: 35%;
+}

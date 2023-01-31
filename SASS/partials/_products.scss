@@ -1,0 +1,16 @@
+.products {
+  &__container {
+    background-color: midnightblue;
+    color: white;
+    height: 90%;
+    overflow: auto;
+    flex-wrap: nowrap;
+  }
+
+  &__img {
+    height: 15rem;
+    width: 15rem;
+    border: 3px solid #F9B04B;
+    border-radius: 15px;
+  }
+}
