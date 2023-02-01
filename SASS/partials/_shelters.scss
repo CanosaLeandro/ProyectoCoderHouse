@@ -1,0 +1,23 @@
+$shelters-f-s: 3rem;
+
+.shelters__search {
+  width: 70%;
+  overflow: auto;
+  flex-wrap: nowrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: chocolate;
+
+  & img {
+    width: 5rem;
+    height: 5rem;
+    padding: 0.5rem;
+    background-color: cornsilk;
+    border: 3px solid #F9B04B;
+    border-radius: 15px;
+  }
+
+  & p {
+    font-size: $shelters-f-s;
+  }
+}

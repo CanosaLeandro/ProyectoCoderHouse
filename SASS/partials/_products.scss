@@ -1,16 +1,47 @@
+$products-font-size: 1rem;
+
 .products {
   &__container {
     background-color: midnightblue;
+    min-width: 25%;
     color: white;
-    height: 90%;
     overflow: auto;
     flex-wrap: nowrap;
+    font-size: $products-font-size;
+
+    & img {
+      width: 10rem;
+      height: 10rem;
+      border: 3px solid #F9B04B;
+      border-radius: 15px;
+      margin: 2rem;
+    }
   }
 
-  &__img {
-    height: 15rem;
-    width: 15rem;
-    border: 3px solid #F9B04B;
-    border-radius: 15px;
+  &__description {
+    background-color: burlywood;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    & .description__img {
+      position: relative;
+
+      & .price__badge{
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        padding: 5px 10px;
+      }
+    }
+
+    & img {
+      width: 25rem;
+      height: 25rem;
+      border-radius: 15px;
+    }
+
+    & p {
+      font-size: $products-font-size * 3;
+    }
   }
 }
