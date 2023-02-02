@@ -15,9 +15,13 @@ $shelters-f-s: 3rem;
     background-color: cornsilk;
     border: 3px solid #F9B04B;
     border-radius: 15px;
+    margin: 1rem;
   }
 
   & p {
+    color: darksalmon;
+    -webkit-text-stroke: 1px purple ;
     font-size: $shelters-f-s;
+    margin: 0;
   }
 }

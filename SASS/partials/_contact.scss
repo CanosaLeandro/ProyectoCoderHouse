@@ -1,0 +1,25 @@
+.contact {
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: #F9B04B;
+
+    & .row {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__background {
+    width: 50%;
+
+    & img {
+      object-fit: fill;
+      width:100%;
+      height: auto;
+    }
+  }
+}
