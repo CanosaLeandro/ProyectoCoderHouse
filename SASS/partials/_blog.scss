@@ -1,8 +1,15 @@
 .blog {
+  &__container {
+    padding: 1rem;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    height: 100%;
+  }
+
   &__post {
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    max-width: 80%;
+    grid-template-columns: repeat(1, 2fr);
+    max-width: 65%;
     overflow: auto;
     background-color: #bc2a8d;
     border-radius: 15px;
@@ -10,8 +17,8 @@
 
     & img {
       position: relative;
-      height: 5rem;
-      width: 5rem;
+      width: 35%;
+      min-width: 7em;
       border: 3px solid #F9B04B;
       border-radius: 50%;
     }
@@ -22,16 +29,19 @@
     }
 
     & span {
-      font-size: large;
+      font-size: 2.5rem;
     }
 
     & form{
       flex-direction: column;
       align-items: flex-end;
     }
+  }
 
-    &  textarea {
-      height: 10em;
+  &__input {
+    & form textarea {
+      min-width: 25em;
+      min-height: 15em;
     }
   }
 }

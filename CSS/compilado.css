@@ -20,7 +20,7 @@ header {
   height: 10%; }
 
 main {
-  height: 81%; }
+  height: 80%; }
 
 footer {
   height: 9%; }
@@ -28,13 +28,10 @@ footer {
 .header__container {
   display: flex;
   background-color: darkseagreen;
-  padding: 0.5rem;
-  justify-content: baseline;
   align-items: center; }
 
 .header__logo {
   width: 5rem;
-  border-radius: 50%;
   float: left;
   margin: 0.5rem; }
 
@@ -101,73 +98,72 @@ iframe {
     border: 3px solid #F9B04B;
     border-radius: 25%; }
 
+.blog__container {
+  padding: 1rem;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  height: 100%; }
+
 .blog__post {
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  max-width: 80%;
+  grid-template-columns: repeat(1, 2fr);
+  max-width: 65%;
   overflow: auto;
   background-color: #bc2a8d;
   border-radius: 15px;
   place-items: center; }
   .blog__post img {
     position: relative;
-    height: 5rem;
-    width: 5rem;
+    width: 35%;
+    min-width: 7em;
     border: 3px solid #F9B04B;
     border-radius: 50%; }
   .blog__post p {
     border-radius: 15px;
     background-color: aquamarine; }
   .blog__post span {
-    font-size: large; }
+    font-size: 2.5rem; }
   .blog__post form {
     flex-direction: column;
     align-items: flex-end; }
-  .blog__post textarea {
-    height: 10em; }
 
-.products__container {
+.blog__input form textarea {
+  min-width: 25em;
+  min-height: 15em; }
+
+.products__list {
   background-color: midnightblue;
   min-width: 25%;
   color: white;
   overflow: auto;
   flex-wrap: nowrap;
   font-size: 1rem; }
-  .products__container img {
-    width: 10rem;
-    height: 10rem;
+  .products__list img {
+    width: 80%;
     border: 3px solid #F9B04B;
     border-radius: 15px;
     margin: 2rem; }
 
 .products__description {
   background-color: burlywood;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); }
-  .products__description .description__img {
-    position: relative; }
-    .products__description .description__img .price__badge {
-      position: absolute;
-      top: 5px;
-      left: 10px;
-      padding: 5px 10px; }
+  overflow: auto; }
+  .products__description .price__badge {
+    position: relative;
+    padding: 5px 10px; }
   .products__description img {
-    width: 25rem;
-    height: 25rem;
+    width: 100%;
     border-radius: 15px; }
-  .products__description p {
-    font-size: 3rem; }
+
+.products__heart {
+  width: 100%; }
 
 .shelters__search {
   width: 70%;
   overflow: auto;
-  flex-wrap: nowrap;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
   background-color: chocolate; }
   .shelters__search img {
     width: 5rem;
-    height: 5rem;
     padding: 0.5rem;
     background-color: cornsilk;
     border: 3px solid #F9B04B;
@@ -176,7 +172,6 @@ iframe {
   .shelters__search p {
     color: darksalmon;
     -webkit-text-stroke: 1px purple;
-    font-size: 3rem;
     margin: 0; }
 
 .contact__form {
@@ -185,7 +180,10 @@ iframe {
   align-content: flex-start;
   gap: 2rem;
   padding: 1rem;
-  background-color: #F9B04B; }
+  background-color: #F9B04B;
+  border-radius: 25px;
+  border: 3px solid;
+  border-color: black; }
   .contact__form .row {
     margin-bottom: 2rem; }
 
@@ -196,37 +194,14 @@ iframe {
     width: 100%;
     height: auto; }
 
-@media screen and (max-width: 1024px) {
-  .pets__list {
-    font-size: 2rem; }
-  .main__container {
-    flex-direction: column;
-    align-items: center; }
-  .blog__container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: end; }
-  .blog_input textarea {
-    width: 20em; }
-  .contact__background {
-    display: none; } }
-
-@media screen and (min-width: 1024px) {
-  .pets__list {
-    font-size: 2.3rem; }
-  .blog__input textarea {
-    width: 50em; } }
-
 footer {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  bottom: 0;
   color: white;
-  background-color: black;
-  opacity: 0.8;
+  background: rgba(0, 0, 0, 0.8);
   margin-top: auto; }
 
 .social__links {
@@ -234,10 +209,83 @@ footer {
   opacity: 1; }
 
 .bxl-instagram {
-  color: #bc2a8d; }
+  color: #bc2a8d;
+  opacity: 1; }
 
 .bxl-twitter {
-  color: #1DA1F2; }
+  color: #1DA1F2;
+  opacity: 1; }
 
 .bxl-tiktok {
-  color: white; }
+  color: white;
+  opacity: 1; }
+
+@media screen and (max-width: 768px) {
+  .blog__container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: end; }
+  .blog__input form textarea {
+    width: 20em;
+    height: 5em; }
+  .blog__post {
+    max-width: 100%; }
+  .pets__list {
+    font-size: 1.5rem; }
+  .products__description p {
+    font-size: 1.5rem; }
+  .products__list img {
+    max-width: 20rem; }
+  .contact__background {
+    display: none; }
+  .shelters__search {
+    font-size: 1.5rem; }
+    .shelters__search span p {
+      font-size: 2rem; }
+  .shelters__item {
+    flex-direction: column; }
+  .main__container {
+    flex-direction: column;
+    align-items: center; } }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .pets__list {
+    font-size: 2.3rem; }
+  .blog__container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: end; }
+  .blog__input form textarea {
+    width: 30em;
+    height: 8em; }
+  .blog__post img {
+    min-width: 5em; }
+  .products__description p {
+    font-size: 2rem; }
+  .products__list img {
+    max-width: 20rem; }
+  .contact__background {
+    display: none; }
+  .shelters__search {
+    font-size: 1rem; }
+    .shelters__search img {
+      width: 4rem; }
+    .shelters__search span p {
+      font-size: 1.5rem; }
+  .shelters__item {
+    flex-direction: column; }
+  .main__container {
+    flex-direction: column;
+    align-items: center; } }
+
+@media screen and (min-width: 1024px) {
+  .pets__list {
+    font-size: 2rem; }
+  .products__description p {
+    font-size: 3rem; }
+  .products__list img {
+    max-width: 15rem; }
+  .shelters__search {
+    font-size: 1.5rem; }
+    .shelters__search span p {
+      font-size: 2rem; } }

@@ -4,10 +4,8 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  bottom: 0;
   color: white;
-  background-color: black;
-  opacity: 0.8;
+  background: rgba(0, 0, 0, .8);
   margin-top: auto;
 }
 
@@ -19,13 +17,16 @@ footer {
 .bxl {
   &-instagram{
     color: #bc2a8d;
+    opacity: 1;
   }
 
   &-twitter {
     color: #1DA1F2;
+    opacity: 1;
   }
 
   &-tiktok {
-    color: white
+    color: white;
+    opacity: 1;
   }
 }

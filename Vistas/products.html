@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/compilado.css">
+    <link rel="stylesheet" href="../css/compilado.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +19,7 @@
   </head>
   <body class="bg-transparent">
     <header class="header__container">
-      <img class="header__logo" src="../Img/pets_logo.jpg" alt="Logo">
+      <img class="header__logo rounded-circle ps-1" src="../Img/pets_logo.jpg" alt="Logo">
       <h1 class="header__title" >Adopt a Pet-Friend</h1>
 
       <nav class="navbar navbar-expand-lg">
@@ -60,37 +60,42 @@
       </nav>
     </header>
 
-    <main class="d-flex justify-content-start gap-4 m-2">
-      <div class="products__container d-flex flex-column justify-content-start p-2">
-        <div class="d-flex flex-row justify-content-start align-items-center m-3">
+    <main class="d-flex justify-content-start gap-3 m-2">
+      <div class="products__list d-flex flex-column justify-content-start p-2">
+        <div class="d-flex flex-column justify-content-start align-items-center m-3">
           <img src="../Img/ball_toy.jpg">
           <span>
             <p class="fs-2">Pelota de juguete</p>
           </span>
         </div>
-        <div class="d-flex flex-row justify-content-start align-items-center m-3">
+        <div class="d-flex flex-column justify-content-start align-items-center m-3">
           <img src="../Img/cat_tower.webp">
           <span>
             <p class="fs-2">Torre para gatos</p>
           </span>
         </div>
-        <div class="d-flex flex-row justify-content-start align-items-center m-3">
+        <div class="d-flex flex-column justify-content-start align-items-center m-3">
           <img src="../Img/pet_food.jpg">
           <span>
             <p class="fs-2">Snacks para mascotas</p>
           </span>
         </div>
-        <div class="d-flex flex-row justify-content-start align-items-center m-3">
+        <div class="d-flex flex-column justify-content-start align-items-center m-3">
           <img src="../Img/dog_harness.webp">
           <span>
             <p class="fs-2">Arnés para perros</p>
           </span>
         </div>
       </div>
-      <div class="products__description p-3 gap-3">
-        <div class="d-flex flex-column align-content-start">
+      <div class="products__description p-3 gap-3 d-flex">
+        <div class="products__img d-flex flex-column">
           <img src="../Img/ball_toy.jpg">
-          <p class="badge price__badge align-content-start">$123</p>
+          <div class="d-flex justify-content-end align-content-center">
+            <p class="badge price__badge">$123</p>
+            <a href="#">
+              <i class='bx bx-heart products__heart'></i>
+            </a>
+          </div>
         </div>
         <p class="text-break">This ball toy for dogs entices play with high impact bouncing! Play fetch at the lake or pool thanks to the lightweight, buoyant design. Compatible with Chuckit! ball launcher</p>
       </div>

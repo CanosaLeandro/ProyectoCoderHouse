@@ -2,14 +2,11 @@
   &__container {
     display: flex;
     background-color: darkseagreen;
-    padding: 0.5rem;
-    justify-content: baseline;
     align-items: center;
   }
 
   &__logo {
     width: 5rem;
-    border-radius: 50%;
     float: left;
     margin: 0.5rem;
   }
