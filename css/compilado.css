@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Itim&family=Poppins:ital,wght@0,300;1,200&display=swap");
 html {
-  background: url(/Img/pets-background.webp) repeat center center fixed;
+  background: url(../img/pets-background.webp) repeat center center fixed;
   background-repeat: repeat;
   background-size: 30%; }
 
