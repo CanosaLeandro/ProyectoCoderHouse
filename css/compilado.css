@@ -92,8 +92,8 @@ iframe {
     gap: 1rem; }
   .pets__list img {
     position: relative;
-    height: 9rem;
     width: 9rem;
+    height: 9rem;
     overflow: hidden;
     border: 3px solid #F9B04B;
     border-radius: 25%; }
@@ -236,6 +236,9 @@ footer {
     width: 100%; }
   .pets__list {
     font-size: 1.5rem; }
+    .pets__list img {
+      width: 5rem;
+      height: 5rem; }
   .products__description p {
     font-size: 1.5rem; }
   .products__list img {
@@ -255,6 +258,9 @@ footer {
     width: 100%; }
   .pets__list {
     font-size: 2.3rem; }
+    .pets__list img {
+      width: 6rem;
+      height: 6rem; }
   .blog__container {
     flex-direction: column;
     align-items: center;
