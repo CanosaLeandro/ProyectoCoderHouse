@@ -1,150 +1,160 @@
 @media screen and (max-width: 768px) {
-
-    .blog {
-      &__container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: end;
-      }
-
-      &__input form textarea {
-        width: 20em;
-        height: 5em;
-      }
-
-      &__post {
-        max-width: 100%;
-      }
-    }
-
-    .pets__list {
-      font-size: 1.5rem;
-    }
-
-    .products {
-      &__description {
-        & p {
-          font-size: 1.5rem;
-        }
-      }
-
-      &__list img {
-        max-width: 20rem;
-      }
-    }
-
-    .contact__background {
-      display: none;
-    }
-
-    .shelters {
-      &__search {
-        font-size: 1.5rem;
-
-        & span p{
-          font-size: 2rem;
-        }
-      }
-
-      &__item {
-        flex-direction: column;
-      }
-    }
-
-    .main__container {
+  .blog {
+    &__container {
       flex-direction: column;
       align-items: center;
+      justify-content: end;
     }
+
+    &__input form textarea {
+      width: 20em;
+      height: 5em;
+    }
+
+    &__post {
+      max-width: 100%;
+    }
+  }
+
+  .contact__background {
+    display: none;
+  }
+
+  .main__video__container {
+    width: 100%
+  }
+
+  .pets__list {
+    font-size: 1.5rem;
+  }
+
+  .products {
+    &__description {
+      & p {
+        font-size: 1.5rem;
+      }
+    }
+
+    &__list img {
+      max-width: 20rem;
+    }
+  }
+
+  .shelters {
+    &__search {
+      font-size: 1.5rem;
+
+      & span p{
+        font-size: 2rem;
+      }
+    }
+
+    &__item {
+      flex-direction: column;
+    }
+  }
+
+  .main__container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  .main__video__container {
+    width: 100%
+  }
 
-    .pets__list {
-      font-size: 2.3rem;
-    }
+  .pets__list {
+    font-size: 2.3rem;
+  }
 
-    .blog {
-      &__container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: end;
-      }
-
-      &__input form textarea {
-        width: 30em;
-        height: 8em;
-      }
-
-      &__post img {
-        min-width: 5em;
-      }
-    }
-
-    .products {
-      &__description {
-        & p {
-          font-size: 2rem;
-        }
-      }
-
-      &__list img {
-        max-width: 20rem;
-      }
-    }
-
-    .contact__background {
-      display: none;
-    }
-
-    .shelters {
-      &__search {
-        font-size: 1rem;
-
-        & img {
-          width: 4rem;
-        }
-
-        & span p{
-          font-size: 1.5rem;
-        }
-      }
-
-      &__item {
-        flex-direction: column;
-      }
-    }
-
-    .main__container {
+  .blog {
+    &__container {
       flex-direction: column;
       align-items: center;
+      justify-content: end;
     }
+
+    &__input form textarea {
+      width: 30em;
+      height: 8em;
+    }
+
+    &__post img {
+      min-width: 5em;
+    }
+  }
+
+  .products {
+    &__description {
+      & p {
+        font-size: 2rem;
+      }
+    }
+
+    &__list img {
+      max-width: 20rem;
+    }
+  }
+
+  .contact__background {
+    display: none;
+  }
+
+  .shelters {
+    &__search {
+      font-size: 1rem;
+
+      & img {
+        width: 4rem;
+      }
+
+      & span p{
+        font-size: 1.5rem;
+      }
+    }
+
+    &__item {
+      flex-direction: column;
+    }
+  }
+
+  .main__container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  .main__video__container {
+    width: 60%;
+    height: 60%;
+  }
 
-    .pets__list {
-      font-size: 2rem;
-    }
+  .pets__list {
+    font-size: 2rem;
+  }
 
-    .products {
-      &__description {
-        & p {
-          font-size: 3rem;
-        }
-      }
-
-      &__list img {
-        max-width: 15rem;
-      }
-    }
-
-    .shelters {
-      &__search {
-        font-size: 1.5rem;
-
-        & span p{
-          font-size: 2rem;
-        }
+  .products {
+    &__description {
+      & p {
+        font-size: 3rem;
       }
     }
+
+    &__list img {
+      max-width: 15rem;
+    }
+  }
+
+  .shelters {
+    &__search {
+      font-size: 1.5rem;
+
+      & span p{
+        font-size: 2rem;
+      }
+    }
+  }
 }
