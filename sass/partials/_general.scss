@@ -8,7 +8,6 @@ html {
 
 body {
   font-family: 'Itim', cursive;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -23,10 +22,11 @@ img {
 
 header {
   height: 10%;
+  height: fit-content;
 }
 
 main {
-  height: 80%;
+  height: 79%;
 }
 
 footer {

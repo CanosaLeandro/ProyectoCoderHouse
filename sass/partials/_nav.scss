@@ -5,14 +5,8 @@ nav {
 .nav {
   &__links {
   border: 2px solid;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  position: sticky;
 
     & li {
-      display: inline;
-      float: left;
       background-color: #F9B04B;
 
       & a {

@@ -1,4 +1,8 @@
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .header__logo {
+    width: 3.5rem;
+  }
+
   .blog {
     &__container {
       flex-direction: column;
@@ -7,21 +11,40 @@
     }
 
     &__input form textarea {
-      width: 20em;
-      height: 5em;
+      width: 10em;
     }
 
     &__post {
       max-width: 100%;
+
+      & img {
+        min-width: 3rem;
+      }
+
+      & span {
+        font-size: 1.5rem;
+      }
+
+      &__item {
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+      }
     }
   }
 
-  .contact__background {
-    display: none;
+  .contact {
+    &__background {
+      display: none;
+    }
+
+    &__form textarea {
+      height: 5em;
+    }
   }
 
   .main__video__container {
-    width: 100%
+    display: none;
   }
 
   .pets__list {
@@ -34,23 +57,48 @@
   }
 
   .products {
+    &__container {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
     &__description {
       & p {
-        font-size: 1.5rem;
+        font-size: 1rem;
       }
     }
 
-    &__list img {
-      max-width: 20rem;
+    &__img {
+      max-width: 20%;
+      & p {
+        font-size: 2.5rem;
+      }
+    }
+
+    &__list {
+      font-size: 1.5rem;
+
+      & div {
+        flex-direction: row;
+      }
+
+      & img {
+        max-width: 7rem;
+      }
     }
   }
 
   .shelters {
     &__search {
-      font-size: 1.5rem;
+      font-size: 0.9rem;
+      overflow-y: auto;
 
       & span p{
         font-size: 2rem;
+      }
+
+      & img {
+        width: 3.5rem;
       }
     }
 
@@ -66,12 +114,18 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  .header__logo {
+    width: 4rem;
+  }
+
   .main__video__container {
-    width: 100%
+    width: 80%;
+    height: 40%;
   }
 
   .pets__list {
-    font-size: 2.3rem;
+    font-size: 1.7rem;
+    max-height: 60%;
 
     & img {
       width: 6rem;
@@ -91,30 +145,70 @@
       height: 8em;
     }
 
-    &__post img {
-      min-width: 5em;
+    &__post {
+      max-width: 80%;
+      align-items: center;
+
+      & img {
+        min-width: 5rem;
+      }
+
+      & span {
+        font-size: 2rem;
+      }
+
+      & div {
+        align-items: center;
+      }
     }
   }
 
   .products {
+    &__container {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
     &__description {
+      height: 50%;
       & p {
         font-size: 2rem;
       }
     }
 
-    &__list img {
-      max-width: 20rem;
+    &__list {
+      font-size: 2rem;
+
+      & div {
+        flex-direction: row;
+      }
+
+      & img {
+        max-width: 10rem;
+      }
     }
   }
 
-  .contact__background {
-    display: none;
+  .contact {
+    &__background {
+      display: none;
+    }
+
+    &__form textarea {
+      height: 15em;
+    }
   }
 
   .shelters {
+    &__container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     &__search {
       font-size: 1rem;
+      max-width: 100%;
 
       & img {
         width: 4rem;
@@ -127,6 +221,10 @@
 
     &__item {
       flex-direction: column;
+    }
+
+    &__map {
+
     }
   }
 
@@ -148,13 +246,31 @@
 
   .products {
     &__description {
+      height: fit-content;
+
       & p {
         font-size: 3rem;
       }
     }
 
-    &__list img {
-      max-width: 15rem;
+    &__img a {
+      display: none;
+    }
+
+    &__list {
+      min-width: 25%;
+      width: fit-content;
+      height: 100%;
+      font-size: 2.5rem;
+
+      & div {
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      & img {
+        max-width: 15rem;
+      }
     }
   }
 
@@ -165,6 +281,17 @@
       & span p{
         font-size: 2rem;
       }
+    }
+  }
+
+  .blog {
+    &__input form textarea {
+      width: 30em;
+      height: 12em;
+    }
+
+    &__post div {
+      align-items: center;
     }
   }
 }
