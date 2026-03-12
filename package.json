@@ -1,7 +1,8 @@
 {
   "devDependencies": {
     "node-sass": "^8.0.0",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "tar": "^6.1.13"
   },
   "name": "desarrolloweb",
   "description": "Paquete node para compilar SCSS a CSS",
@@ -172,7 +173,6 @@
     "strip-indent": "^3.0.0",
     "supports-color": "^7.2.0",
     "supports-preserve-symlinks-flag": "^1.0.0",
-    "tar": "^6.1.13",
     "to-regex-range": "^5.0.1",
     "touch": "^3.1.0",
     "trim-newlines": "^3.0.1",
