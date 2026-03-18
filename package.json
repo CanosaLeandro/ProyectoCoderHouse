@@ -2,7 +2,7 @@
   "devDependencies": {
     "node-sass": "^8.0.0",
     "nodemon": "^2.0.20",
-    "tar": "^6.1.13"
+    "tar": "^7.5.11"
   },
   "name": "desarrolloweb",
   "description": "Paquete node para compilar SCSS a CSS",
